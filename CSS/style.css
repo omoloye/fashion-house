@@ -118,6 +118,11 @@ footer {
   padding: 3rem;
   color: white;
 }
+a:-webkit-any-link {
+  color: webkit link;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 footer > div > a {
   font-size: 2rem;
@@ -192,11 +197,19 @@ a {
 .wpb_wrapper .fas {
   color: rgba(160, 160, 160, 0.85);
 }
-.fab,
-.fas {
+.fab, {
   padding-right: 0.5rem;
 }
+.fa, .fas {
+  font-weight: 900;
+}
+.fa, .far, .fa {
+  font-family: "font Awesome 5 free";
+}
 .fab, {
+  font-family: "Font Awesome 5 Brands";
+}
+.fas {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-size: normal;
@@ -204,7 +217,28 @@ a {
   text-rendering: auto;
   line-height: 1;
 }
-
+.fab {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-size: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.fa-twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  content: "\f099";
+}
+.fa-envelope:before {
+  content: "\f0e0";
+}
+.fa-instagram:before {
+  content: "\f16d";
+}
+::before {
+  box-sizing: border-box;
+}
 .row {
   position: relative;
 }
